@@ -71,7 +71,7 @@ Le Service Locator centralise l'accès aux services du jeu, comme les textures o
 	    Services.Register<IAssetsManager>(this);    
     }
 
-> On peut ensuite créer dans notre class Game, par exemple, un textureSet pour les entités :
+> On peut ensuite créer dans notre classe Game, par exemple, un textureSet pour les entitées :
 
     assetsManager.AddTextureSet("Entity",  new  List<(int  id,  string  name,  string  path)>
     {    
@@ -87,7 +87,7 @@ Le Service Locator centralise l'accès aux services du jeu, comme les textures o
 
     Raylib.DrawTexture(assets.GetTextureFromSet("Entity",  (int)IdTile.Rockford),  (int)posInWorld.X,  (int)posInWorld.Y,  Color.White);
 
-> On peut également charger par exemple un musique :
+> On peut également charger, par exemple, une musique :
 
     assetsManager.Load<Music>("Menu", "Assets/Musics/menu.wav");
     
